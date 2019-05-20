@@ -4,3 +4,4 @@ node_modules/
 public/capture
 composer.lock
 bootstrap/compiled.php
+.idea/
