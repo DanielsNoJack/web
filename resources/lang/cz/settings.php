@@ -23,9 +23,9 @@ return array(
 
     'purchase' => 'Sledujte své aktivity kdekoliv na světě přes <b>Kerberos.cloud</b>, Cena <u>začíná</u> již od 1,49 €/měsíc!',
 
-    'basic' => 'Jednoduché',
+    'basic' => 'Jednoduchá',
 
-    'advanced' => 'Rozšířené',
+    'advanced' => 'Rozšířená',
 
     'name' => 'Jméno',
 
@@ -33,7 +33,7 @@ return array(
 
     'timezone' => 'Časová zóna',
 
-    'timezoneInfo' => 'Časová zóna se používá pro konverzi časových razítek do vašeho lokálního času. Používá se ve strojovně i webovém rozhraní.',
+    'timezoneInfo' => 'Časová zóna se používá pro konverzi časových razítek do vašeho lokálního času. Používá se v Machinery i webovém rozhraní.',
 
     'camera' => 'Kamera',
 
@@ -168,7 +168,7 @@ return array(
     'gpioPeriodInfo' => 'Počet mikrosekund, jak dlouho má pulz trvat.',
 
     'hardwareEncodingEnabled' => 'Pokud vaše zachytávací zařízení podporuje hardwarové kódování, můžete nastavit další parametry. Například časové razítko.
-	Generované video bude mít stejné paramtry, které jste zvolili (například počet snímů za sekundu, ostrost, atd.',
+	Generované video bude mít stejné parametry, které jste zvolili (například počet snímů za sekundu, ostrost, atd.',
 
     'secure' => 'zabezpečení',
 

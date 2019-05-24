@@ -11,7 +11,7 @@ return array(
 	|
 	*/
 
-	'activity' => 'Activita',
+	'activity' => 'Aktivita',
 
 	'selectView' => 'Výběr pohledu',
 
@@ -25,8 +25,8 @@ return array(
 
 	'hour' => 'Hodina',
 
-  'average' => 'Průměr',
+	'average' => 'Průměr',
 
-	'weekday' => 'Den v týdnu',
+	'weekday' => 'Dny v týdnu',
 
 );

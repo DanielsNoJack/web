@@ -21,9 +21,9 @@ return array(
 
     'cloud' => 'Cloud',
 
-    'on' => 'Zapnuto',
+    'on' => 'Zap',
 
-    'off' => 'Vypnuto',
+    'off' => 'Vyp',
 
     'logout' => 'Odhlásit',
 

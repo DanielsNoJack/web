@@ -23,7 +23,7 @@ return array(
 
     'osspecifications' => 'Specifikace OS',
 
-    'warning-docker' => 'Nelze zjistit, jsem v izolovaném Docker kontejneru..',
+    'warning-docker' => 'Nelze zjistit, kerberos.io běží v izolovaném Docker kontejneru..',
 
     'statistics' => 'Statistiky',
 
@@ -49,7 +49,7 @@ return array(
 
     'harddisksAvailable' => '',
 
-    'networkSpecs' => 'Specifice sítě',
+    'networkSpecs' => 'Specifikace sítě',
 
     'device' => 'Zařízení',
 
@@ -57,7 +57,7 @@ return array(
 
     'sent' => 'Odesláno',
 
-    'twoServicesRunning' => 'Je třeba aby běžely dvě služby: web a strojovna',
+    'twoServicesRunning' => 'Je třeba aby běžely dvě služby: web a machinery',
 
     'versions' => 'Verze',
 

@@ -13,9 +13,9 @@ return array(
 	|
 	*/
 
-	"password" => "Heslo musí mít alespoň 6 znaků a být stejné jako jeho potvrzení",
+	"password" => "Heslo musí mít alespoň 6 znaků a být stejné jako jeho potvrzení.",
 
-	"user" => "Uživatel s touto emailovou adresou nebyl nalezen",
+	"user" => "Uživatel s touto emailovou adresou nebyl nalezen.",
 
 	"token" => "Token pro obnovu hesla je neplatný.",
 
