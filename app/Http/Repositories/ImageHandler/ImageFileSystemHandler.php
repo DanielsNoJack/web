@@ -452,7 +452,7 @@ class ImageFileSystemHandler implements ImageHandlerInterface
                     }
                     else
                     {
-                         $object['type'] = 'video';
+                        $object['type'] = 'video';
                     }
 
                     array_push($data, $object);
@@ -522,7 +522,7 @@ class ImageFileSystemHandler implements ImageHandlerInterface
         $imagesTemp = $this->getSequence($imagesTemp, $page, $maximumTimeBetween);
 
         // We will use getID3 to check if media this.
-        $getID3 = new \getID3;
+        //$getID3 = new \getID3;
 
         $data = [];
         foreach($imagesTemp as $image)
@@ -535,7 +535,8 @@ class ImageFileSystemHandler implements ImageHandlerInterface
 
             $path = $this->filesystem->getPathToFile($image);
             $systemPath = $this->filesystem->getSystemPathToFile($image);
-            $mediaInfo = $getID3->analyze($systemPath);
+            //$mediaInfo = $getID3->analyze($systemPath);
+            $pathParts = pathinfo($path);
 
             try
             {
@@ -546,13 +547,13 @@ class ImageFileSystemHandler implements ImageHandlerInterface
                     'metadata' => $this->filesystem->getMetadata($image)
                 ];
 
-                if(array_key_exists('error', $mediaInfo) || $mediaInfo['fileformat'] !== 'jpg')
+                if($pathParts['extension'] !== 'jpg')
                 {
                     $object['type'] = 'video';
                 }
                 else
                 {
-                     $object['type'] = 'image';
+                    $object['type'] = 'image';
                 }
 
                 array_push($data, $object);
@@ -678,9 +679,9 @@ class ImageFileSystemHandler implements ImageHandlerInterface
 
             $hours = [
                 'total' => [0, 0, 0, 0 ,0, 0,
-                            0, 0, 0, 0 ,0, 0,
-                            0, 0, 0, 0 ,0, 0,
-                            0, 0, 0, 0 ,0, 0],
+                    0, 0, 0, 0 ,0, 0,
+                    0, 0, 0, 0 ,0, 0,
+                    0, 0, 0, 0 ,0, 0],
                 'instances' => []
             ];
 
@@ -731,9 +732,9 @@ class ImageFileSystemHandler implements ImageHandlerInterface
                 else
                 {
                     $hours['instances'][$instanceName] = [0, 0, 0, 0 ,0, 0,
-                                                          0, 0, 0, 0 ,0, 0,
-                                                          0, 0, 0, 0 ,0, 0,
-                                                          0, 0, 0, 0 ,0, 0];
+                        0, 0, 0, 0 ,0, 0,
+                        0, 0, 0, 0 ,0, 0,
+                        0, 0, 0, 0 ,0, 0];
                 }
 
                 $heap->next();
@@ -756,9 +757,9 @@ class ImageFileSystemHandler implements ImageHandlerInterface
     public function countAverageImagesPerHour($hoursPerDay)
     {
         $hours = [0, 0, 0, 0 ,0, 0,
-                  0, 0, 0, 0 ,0, 0,
-                  0, 0, 0, 0 ,0, 0,
-                  0, 0, 0, 0 ,0, 0];
+            0, 0, 0, 0 ,0, 0,
+            0, 0, 0, 0 ,0, 0,
+            0, 0, 0, 0 ,0, 0];
 
         $images = [];
         foreach ($hoursPerDay as $key => $hoursForDay)
